@@ -31,7 +31,7 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    
+
     publishing {
         singleVariant("release") {
             withSourcesJar()
@@ -47,10 +47,10 @@ fun getProperty(key: String, defaultValue: String = ""): String {
 }
 
 val libraryVersion = getProperty("libraryVersion", "1.0.0")
-val githubOwner = getProperty("githubOwner", "YOUR_GITHUB_USERNAME")
-val githubRepo = getProperty("githubRepo", "YOUR_REPOSITORY_NAME")
-val githubUsername = getProperty("githubUsername", "YOUR_GITHUB_USERNAME")
-val githubToken = getProperty("githubToken", "YOUR_GITHUB_TOKEN")
+val githubOwner = getProperty("githubOwner", "adispatil")
+val githubRepo = getProperty("githubRepo", "Toasty-Library")
+val githubUsername = getProperty("githubUsername", "adispatil")
+val githubToken = getProperty("githubToken", "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")
 
 publishing {
     publications {
