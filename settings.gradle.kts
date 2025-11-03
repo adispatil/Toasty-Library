@@ -16,6 +16,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/adispatil/Toasty-Library")
+            credentials {
+                username = providers.gradleProperty("githubUsername").getOrElse("adispatil")
+                password = providers.gradleProperty("githubToken").getOrElse("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")
+            }
+        }
     }
 }
 

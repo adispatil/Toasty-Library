@@ -50,8 +50,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     
-    // Local library module
-    implementation(project(":toastylibrary"))
+    // Remote library from GitHub Packages
+    implementation("com.aditya.toastylibrary:toastylibrary:1.0.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
